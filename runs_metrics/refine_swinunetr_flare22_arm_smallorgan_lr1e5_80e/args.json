@@ -1,0 +1,85 @@
+{
+  "data_root": "/root/autodl-tmp/ARM/data/flare22",
+  "output_dir": "/root/autodl-tmp/ARM/runs/refine_swinunetr_flare22_arm_smallorgan_lr1e5_80e",
+  "epochs": 80,
+  "eval_every": 2,
+  "batch_size": 1,
+  "num_workers": 8,
+  "cache_rate": 1.0,
+  "val_count": 8,
+  "roi_size": [
+    96,
+    96,
+    96
+  ],
+  "pixdim": [
+    1.5,
+    1.5,
+    2.0
+  ],
+  "a_min": -175.0,
+  "a_max": 250.0,
+  "pos_ratio": 8.0,
+  "neg_ratio": 1.0,
+  "num_samples": 8,
+  "sw_batch_size": 1,
+  "overlap": 0.625,
+  "keep_largest": false,
+  "channels": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "strides": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "num_res_units": 2,
+  "init_checkpoint": "/root/autodl-tmp/ARM/runs/refine_swinunetr_flare22_arm_best_80e/checkpoint_best.pt",
+  "init_encoder_only": false,
+  "init_encoder_prefix": "swinViT",
+  "resume_checkpoint": "",
+  "auto_resume": false,
+  "lr": 1e-05,
+  "weight_decay": 1e-06,
+  "loss": "dice_focal",
+  "lambda_dice": 1.0,
+  "lambda_ce": 1.0,
+  "lambda_focal": 1.0,
+  "lambda_tversky": 1.0,
+  "focal_gamma": 3.0,
+  "tversky_alpha": 0.3,
+  "tversky_beta": 0.7,
+  "ce_weight_bg": 0.0,
+  "ce_weight_fg": 0.0,
+  "grad_clip": 12.0,
+  "sharing_strategy": "file_system",
+  "amp": true,
+  "cpu": false,
+  "seed": 42,
+  "num_classes": 14,
+  "swin_patch_size": 2,
+  "swin_depths": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "swin_num_heads": [
+    3,
+    6,
+    12,
+    24
+  ],
+  "swin_window_size": [
+    7,
+    7,
+    7
+  ],
+  "swin_feature_size": 24,
+  "swin_use_checkpoint": true
+}

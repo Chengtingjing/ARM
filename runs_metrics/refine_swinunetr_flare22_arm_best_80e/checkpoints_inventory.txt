@@ -1,0 +1,2 @@
+-rw-r--r-- 1 root root 188M Jun 22 22:11 runs/refine_swinunetr_flare22_arm_best_80e/checkpoint_best.pt
+-rw-r--r-- 1 root root 188M Jun 22 22:15 runs/refine_swinunetr_flare22_arm_best_80e/checkpoint_last.pt

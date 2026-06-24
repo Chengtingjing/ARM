@@ -1,0 +1,2 @@
+-rw-r--r-- 1 root root 188M Jun 22 22:52 runs/refine_swinunetr_amos22_arm_sameproto_lr5e6_50e/checkpoint_best.pt
+-rw-r--r-- 1 root root 188M Jun 22 23:21 runs/refine_swinunetr_amos22_arm_sameproto_lr5e6_50e/checkpoint_last.pt
